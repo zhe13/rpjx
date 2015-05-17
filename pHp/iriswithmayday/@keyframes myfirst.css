@@ -1,0 +1,74 @@
+.changecolor
+{
+animation: myfirst 55s;
+-moz-animation: myfirst1 5s;	/* Firefox */
+-webkit-animation: myfirst 5s;	/* Safari 和 Chrome */
+-o-animation: myfirst 5s;	/* Opera */
+}
+
+/*这边使用translate 防止代码过多而崩溃*/
+@keyframes myfirst1
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+@-moz-keyframes myfirst1 /* Firefox */
+{
+from {color: red;-moz-transform: translate(1000px,0);}
+to {color: green;-moz-transform: translate(-20px,0);}
+}
+
+@-webkit-keyframes myfirst1 /* Safari 和 Chrome */
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+@-o-keyframes myfirst1 /* Opera */
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+.danmu
+{
+	position: absolute;
+	
+}
+/*在动画播放中改变背景颜色并且移动*/
+@keyframes myfirst2
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left:200px; top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst2 /* Firefox */
+{
+0%   {color: red; left:0px; top:0px;}
+25%  {color: yellow; left:200px; top:0px;}
+50%  {color: blue; left:200px; top:200px;}
+75%  {color: green; left:400px; top:200px;}
+100% {color: red; left:400px; top:400px;}
+}
+
+@-webkit-keyframes myfirst2 /* Safari 和 Chrome */
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left:200px; top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst2 /* Opera */
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left:200px; top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}

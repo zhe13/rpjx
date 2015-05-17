@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--copyright by zhe13@2015-->
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--使用viewport meta标签的user－scable = no可以禁用缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--上述的meta标签必须前置-->
+    <meta name="author" content="zhe13">
+    <meta name="description" content="BootStrapTest">
+
+    <title>Bootstrap Test1@4.4</title>
+    <!--BootStrap Core CSS-->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <!--我自己的CSS-->
+    <link rel="stylesheet" href="dist/css/testCSS.css" >
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!--nav标签是HTML5的新标签，用作导航链接-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <!--关于Button的注释-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">呈天</a>
+          <!--带有navbar－brand的a元素会让文本看起来大一号-->
+        </div>
+        <!--/.nav-collapse -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">关于我</a></li>
+            <li><a href="#">胶片</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+              role="button" aria-expanded="false">
+                游戏
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">PC 游戏</li>
+                <li>
+                  <a href="#">杀人速写</a>
+                </li>
+                <li class="driver"></li>
+                <li class="dropdown-header">HTML小游戏</li>
+                <li>
+                  <a href="#">隔壁老王大脱逃</a>
+                </li>
+                <li>
+                  <a href="#">你的小屁屁</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="start-words">
+        <h1>Hello,呈天。</h1>
+        <p>
+          “欢迎你来到Html5的世界。”
+          <br>
+          “呈天”
+        </p>
+        <p>
+          <a href="#" class="btn btn-lg btn-primary" role="button">一个按钮</a>
+        </p>
+      </div>
+    </div>
+
+    <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js">
+    </script>
+    <!--include all complied plugins(below),or include individuals files as needed-->
+    <script src="dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
