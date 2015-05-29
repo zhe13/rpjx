@@ -7,7 +7,10 @@ var ParseApplicationID = "DPwW3VlJOJn7Cz2H2H1uJOCzA6PUrYHPmzMRUz2u";
 var ParseRESTKey	   = "oB6ABoyY7m7Jb7vsY0i6pjH3ScjTgRiUYlDzGQvz";
 
 $(document).ready(function(){
-	getMessage();
+	setInterval(function(){
+		getMessage();
+		console.log('can？');
+	},2000);
 
 	$("#send").click(function(){
 		var username = $('input[name=username]').val();
