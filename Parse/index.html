@@ -12,7 +12,7 @@ name 	:	Parse_Talk2U
   	<meta name="viewport" content="width=device-width,initial-scale=1">
   <!--this three items must be put in fisrt place-->
 	<title>This is a Parse App</title>
-	<link rel="stylesheet" href="css/app_01.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/app_1.css">
 	<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<!--jquery-->
 	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
@@ -20,16 +20,15 @@ name 	:	Parse_Talk2U
 	<script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<!--parse-->
 	<script type="text/javascript" src="https://www.parse.com/downloads/javascript/parse-1.4.2.min.js"></script>
-
+	
 	<script type="text/javascript" src="js/app_1.js"></script>
 </head>
 <body>
 <!--write your own code here-->
 	<div class="container-fluid">
-		<div class="row-fliud"id='chatMainPanel'>
+		<div class="row-fliud" id="ChatPanel">
 			<h1>Chat with Parse REST API</h1>
-			<div id="Scroll">
-			<table class="table table-bordered table-striped" >
+			<table class="table table-bordered table-striped">
 				<caption>Messages</caption><!--table标题-->
 				<thead>
 					<tr>
@@ -44,7 +43,6 @@ name 	:	Parse_Talk2U
 					</tr>
 				</tbody>
 			</table>
-			</div>
 		</div>
 		<!--New Message Form-->
 		<div class="row-fluid">
